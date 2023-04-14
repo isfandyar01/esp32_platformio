@@ -1,12 +1,17 @@
 #include <unity.h>
+#include <example.hpp>
+
+
+
+void test_add_two_ints( void)
+{
+    int sum = add(1,4);
+    TEST_ASSERT_EQUAL_INT32(5,sum);
+}
 
 void RUN_UNITY_TESTS() {
     UNITY_BEGIN();
-    RUN_TEST(test_calculator_addition);
-    RUN_TEST(test_calculator_subtraction);
-    RUN_TEST(test_calculator_multiplication);
-    RUN_TEST(test_calculator_division);
-    RUN_TEST(test_expensive_operation);
+    RUN_TEST(test_add_two_ints);
     UNITY_END();
 }
 
