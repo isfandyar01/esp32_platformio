@@ -23,4 +23,7 @@ jobs:
       - name: Build PlatformIO Project
         working-directory: ./esp32-cicd
         run: pio run
-        run: pio test
+        
+      - name: RUN platformio test
+        working-directory: ./esp32-cicd  
+		run: pio test
