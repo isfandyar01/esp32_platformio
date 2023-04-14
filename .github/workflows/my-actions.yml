@@ -23,4 +23,4 @@ jobs:
         run: pio test
       - name: Build PlatformIO Project
         working-directory: ./esp32-cicd
-        run: pio run  
+        run: pio run -e esp32dev  
