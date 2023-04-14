@@ -17,10 +17,10 @@ jobs:
         with:
           python-version: "3.9"
       - name: Install PlatformIO Core
-        run: pip install --upgrade platformio
-      - name: Build PlatformIO Project
-        working-directory: ./esp32-cicd
-        run: pio run
+        run: pip install --upgrade platformio     
       - name: Build PlatformIO test
         working-directory: ./esp32-cicd
         run: pio test
+      - name: Build PlatformIO Project
+        working-directory: ./esp32-cicd
+        run: pio run  
