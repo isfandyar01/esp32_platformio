@@ -1,11 +1,10 @@
+---
 name: PlatformIO CI
-
-on: [push]
-
+on:
+  - push
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - uses: actions/cache@v3
@@ -16,14 +15,12 @@ jobs:
           key: ${{ runner.os }}-pio
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: "3.9"
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
-
       - name: Build PlatformIO Project
         working-directory: ./esp32-cicd
         run: pio run
-        
-      - name: RUN platformio test
-        working-directory: ./esp32-cicd  
-		run: pio test
+      - name: Build PlatformIO test
+        working-directory: ./esp32-cicd
+        run: pio test
