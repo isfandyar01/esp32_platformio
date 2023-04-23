@@ -8,7 +8,7 @@ void test_add_two_ints( void)
     int sum = add(1,4);
     TEST_ASSERT_EQUAL_INT32(5,sum);
 }
-void rms_to_peak_current(void)
+void rms_peak_current(void)
 {
     TEST_FAIL(rms_to_peak_current);
 }
@@ -16,7 +16,7 @@ void rms_to_peak_current(void)
 void RUN_UNITY_TESTS() {
     UNITY_BEGIN();
     RUN_TEST(test_add_two_ints);
-    RUN_TEST(rms_to_peak_current);
+    RUN_TEST(rms_peak_current);
     UNITY_END();
 }
 
