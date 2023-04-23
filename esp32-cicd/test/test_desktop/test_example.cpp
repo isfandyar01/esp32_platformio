@@ -1,5 +1,5 @@
 #include <unity.h>
-#include <example.hpp>
+#include <YHDC.hpp>
 
 
 
@@ -12,6 +12,7 @@ void test_add_two_ints( void)
 void RUN_UNITY_TESTS() {
     UNITY_BEGIN();
     RUN_TEST(test_add_two_ints);
+    RUN_TEST(rms_to_peak_current);
     UNITY_END();
 }
 
