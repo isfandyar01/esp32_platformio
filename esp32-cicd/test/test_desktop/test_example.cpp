@@ -10,7 +10,7 @@ void test_add_two_ints( void)
 }
 void rms_to_peak_current(void)
 {
-    
+    TEST_FAIL(rms_to_peak_current);
 }
 
 void RUN_UNITY_TESTS() {
