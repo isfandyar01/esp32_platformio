@@ -8,5 +8,5 @@ int add (int a, int b)
 
 float rms_to_peak_current()
 {
-    return false;
+    return true;
 }
