@@ -9,6 +9,6 @@ int add (int a, int b)
 }
 
 float rms_to_peak_current()
-{  peak_current=1;
+{   peak_current=1.0;
     return peak_current;
 }
