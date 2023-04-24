@@ -28,6 +28,11 @@ float pri_peak_current(uint8_t current=100)
     return primary_peak_current;
 }
 
+/**
+ * @brief returns secondary coil peak current 
+ * 
+ * @return float 
+ */
 float sec_peak_current()
 {
     return 1.0f;

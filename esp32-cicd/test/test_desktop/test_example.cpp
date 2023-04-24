@@ -17,7 +17,7 @@ void peak_current(void)
 void secondary_peak_current()
 {
     float expected = sec_peak_current();
-    TEST_ASSERT_EQUAL_FLOAT(1.0f,expected);
+    TEST_ASSERT_EQUAL_FLOAT(0.0707f,expected);
 }
 
 void RUN_UNITY_TESTS() {
