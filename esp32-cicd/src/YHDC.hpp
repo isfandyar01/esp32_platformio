@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-static float peak_current ;
+static float primary_peak_current ;
 
 /**
  * @brief for testing that unity test framework is working
@@ -23,7 +23,12 @@ int add (int a, int b)
  * @return float 
  */
 
-float rms_to_peak_current(uint8_t current=100)
-{  peak_current=current * 1.414;
-    return peak_current;
+float pri_peak_current(uint8_t current=100)
+{  primary_peak_current=current * 1.414;
+    return primary_peak_current;
+}
+
+float sec_peak_current()
+{
+    return 1.0f;
 }
