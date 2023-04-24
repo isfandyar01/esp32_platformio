@@ -9,8 +9,8 @@ void test_add_two_ints( void)
     TEST_ASSERT_EQUAL_INT32(5,sum);
 }
 void rms_peak_current(void)
-{
-    TEST_ASSERT_EQUAL_FLOAT(1.0f,rms_to_peak_current);
+{   float expected = rms_to_peak_current();
+    TEST_ASSERT_EQUAL_FLOAT(1.0f,expected);
    
 }
 
