@@ -10,7 +10,7 @@ void test_add_two_ints( void)
 }
 void rms_peak_current(void)
 {
-    TEST_ASSERT_EQUAL_FLOAT(1.0f,1.0f);
+    TEST_ASSERT_EQUAL_FLOAT(1.0f,rms_to_peak_current);
    
 }
 
