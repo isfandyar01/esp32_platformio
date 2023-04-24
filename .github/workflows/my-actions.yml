@@ -20,7 +20,7 @@ jobs:
         run: pip install --upgrade platformio     
       - name: Build PlatformIO test
         working-directory: ./esp32-cicd
-        run: pio test
+        run: pio test -vvv
       - name: Build PlatformIO Project
         working-directory: ./esp32-cicd
         run: pio run -e esp32dev  
