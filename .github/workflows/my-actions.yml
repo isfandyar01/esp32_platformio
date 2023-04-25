@@ -18,7 +18,7 @@ jobs:
           python-version: "3.9"
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio     
-      - name: Build PlatformIO test
+      - name: RUN UNITY UNIT TEST
         working-directory: ./esp32-cicd
         run: pio test -vvv
       - name: Build PlatformIO Project
